@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.Master.cs" Inherits="AppEmpleadosCrud.App.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="./css/estilos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="estiloBody">
+    <form id="form1" runat="server">
+        <div>
+             <header class="estiloHeader material-shadow">
+                 <nav class="menuNav">
+                     <ul class="menuUl">
+                         <li class="menuLi"> <a class="menuLink" href="./Default.aspx"> Home </a></li>
+                         <li class="menuLi"> <a class="menuLink" href="./Empleados.aspx"> Empleados </a></li>
+                         <li class="menuLi"> <a class="menuLink" href="./Formulario.aspx"> Formulario </a></li>
+                         <li class="menuLi"> <a class="menuLink" href="./Nosotros.aspx"> Nosotros </a></li>
+                     </ul>
+                 </nav>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>            
+            <footer class="estiloFooter material-shadow">
+                <h3 class="textoFooter"> by: Jesus Ropero Barbosa</h3>        
+                <div class="contenedorGib">
+                    <div> 
+                        <a href="https://github.com/jroperosena"> <img class="ico" src="./pic/github.png" alt=""></a>
+                   </div>
+    
+                   <div> 
+                    <small> jroperosena </small>
+                   </div>
+                </div>       
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
